@@ -1,4 +1,4 @@
-# Made using HTML, CSS, JAVASCRIPT, Node js , Express js , Mongodb
+# Made using HTML, CSS, JavaScript, Node js , Express js , Mongodb
 
 # Backend live deployed live link 
 https://url-shortener-backend-75h1.onrender.com
