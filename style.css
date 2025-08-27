@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full-screen-bg {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-screen-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: 
+    linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px),
+    radial-gradient(circle 800px at 0% 200px, #d5c5ff, transparent);
+  background-size: 96px 64px, 96px 64px, 100% 100%;
+}
+
+
+.container {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #6b21a8; 
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="url"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+input[type="url"]::placeholder {
+  color: #999;
+}
+
+button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #6b21a8;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #581c87;
+}
+
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 0.5rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.short-url {
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+
+.copy-btn {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: #9333ea;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #7e22ce;
+}
+
+.error {
+  color: #ef4444; 
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}

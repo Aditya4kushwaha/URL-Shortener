@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>URL Shortener</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/profile.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="full-screen-bg">
+      <div class="container">
+        <h1>URL Shortener</h1>
+        <form id="urlForm">
+          <input
+            type="url"
+            id="longUrl"
+            placeholder="Enter your URL"
+            required
+          />
+          <button type="submit">Shorten</button>
+        </form>
+        <div id="errorMsg" class="error"></div>
+        <div class="result" id="resultBox">
+          <p class="short-url" id="shortUrl"></p>
+          <button class="copy-btn" id="copyBtn">Copy</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
